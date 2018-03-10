@@ -100,7 +100,7 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 }
 
 .header {
-	background: url(../img/skybild.jpg) no-repeat center top;
+	background: url(../images/skybild.jpg) no-repeat center top;
 	 display: table;
     position: relative;
 	line-height: 25px;
