@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open sans|Raleway');
- 
-/* bootstrap.css */
-/** {
-   	font-size: 14px;
-   	line-height: 1.428;
-	font: 'Roboto' !important;
-}*/
 
-/* style.css */
-/* * {
-   font-size: 16px;
-   line-height: 1.428;
-   font: 'Roboto' !important;
-}*/
-
-/*html {
-  font-size: 14px;
-  font: 'Roboto';
-}*/
 
 html, body {
  	font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
@@ -38,10 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #222;
 }
 
-/*.h3 {
-	font-size: 16px;
-	
-}*/
 
 .centered {
 	text-align:  center;
@@ -68,12 +46,6 @@ li a:hover {
 	outline: 0;
 }
 
-/*li a:active {
-	color: #fff;
-    background-color: rgb(0,158,216);
-	text-decoration: none;
-	outline: 0;
-}*/
 
 label {
 	display: block;
@@ -99,9 +71,14 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 	text-align:  center;
 }
 
+.block {
+	margin:50px 50px;
+}
+
+
 .header {
 	background: url(../images/skybild.jpg) no-repeat center top;
-	 display: table;
+	display: table;
     position: relative;
 	line-height: 25px;
 	margin-bottom: 25px;
@@ -117,25 +94,9 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 	background-size: cover;
 }
 
-/*#headerwrap {
-	background: url(../images/wrapbild.png) no-repeat center top;
-	line-height: 25px;
-	margin-bottom: 25px;
-	font-size: 18px;
-	font-family: "Tahoma";
-	font-weight: bolder;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover; 
-
-	background-size: cover;
-}*/
-
-/* Custom Button Styles */
 
 
-
+/* --- Custom Button Styles ---*/
 /* ------ start BUTTONS ------*/
 
 .btn-dark {
@@ -268,12 +229,6 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 	height: 95px;
 }
 
-.logowrap p {
-	font-size: 27px;
-	font-family: Roboto, Verdana;
-	color: #FFFFFF;
-	margin-top: 5px;
-}
 
 #logowrap img {
 	height: 30px;
@@ -287,39 +242,31 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 /* паспортизация */
 /* проектирование */
 
-/*.servicewrap {
-	background: #0088CB;
-	width: 670px;
-	height: auto;
-	margin-top: 60px;
-}*/
 
 #servicemain {
 	margin-top: 40px;
 	color: #000;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 1.8;
 
 }
 
  .servicemain button {
 	list-style-type: none;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: normal;
 	text-align: center;
 	line-height: 1.8;
-	/* width:35vmin;
-    height:35vmin; */
-    padding: 20px 0 20px 0;
+	padding: 20px 0 20px 0;
 
 }
 
 
 #aboutmain p {
 	margin-top: 20px;
-	font-size: 30px;
+	font-size: 28px;
 	line-height: normal;
 	text-align: center;
 	white-space: normal;
@@ -327,16 +274,10 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 
 }
 
-/*#aboutmain div {
-	height: 260px;
-	width: 300px
-}*/
-
 
 /* Надпись группа.. */
 .aboutwrap {
 	margin-top: 125px;
-	/*white-space: nowrap;*/
 	float: none;
 	text-align: center;
 	padding-top: 15px;
@@ -396,18 +337,52 @@ ul.nav a:focus {  background-color: #009ed8; color: #fff !important; }
 /* --------- page SERVICE ----- */
 
 .services img {
-	/*margin-top: 60px;*/
 	margin-bottom: 20px;
+	
 }
 
-.services p {
-	max-width: 250px;
-	max-height: 70px;
-	color: #0088CB;
-	font-size: 20px;
-	overflow: hidden;
-	text-align: center;
-	line-height: 1.1em;
+.image {
+	display:inline-block;   
+    position:relative;
+}
+
+.image span {
+    display:inline-block;
+    position:absolute;
+    top:55%;   
+    left:15px;
+    right: 0px;
+    /* Оформление текста */
+    color:#FFF;
+    font-size:22px; 
+     
+    /* Фон */
+    background-color:rgba(0,0,0,0.7);
+    padding:10px 30px;
+}
+
+.item_bgb {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #3598dc;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+  	display: flex;
+	  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	  justify-content: center;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  margin: 0 auto;
+}
+
+.item_bgb img {
+	background-color:rgba(0,0,0,0);
+	border: none;
 }
 
 img.animate:hover {
@@ -415,8 +390,8 @@ img.animate:hover {
     opacity: 0.25; /* прозрачность для других браузеров */
 }
 
-#about_us, #services{
-	/*margin-top: 20px;*/
+#about_us {
+	
 	font-size: 17px;
 	font-family: 'Tahoma';
 	line-height: 1.5em;
@@ -430,6 +405,19 @@ img.animate:hover {
 .pagename {
 	margin-top:30px;
 	margin-bottom:30px;
+}
+
+.blockname {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+} 
+
+.blockstyle {
+	text-transform: uppercase;
+	font-family: "Source Sans Pro" 17px bold;
 }
 
 .pagecont {
@@ -447,17 +435,45 @@ img.animate:hover {
   	position: relative;
   	vertical-align: middle;
 	}
+
+#licence {
+	background: url(../images/cert_Background.jpg) no-repeat center top;
+	display: table;
+    position: relative;
+	line-height: 25px;
+	padding-bottom:40px; 
+	/*width: 100%;
+   	height: 100%;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; 
+
+	background-size: cover;
 }
 
-&::before,
-  &::after {
-  	
-    box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+#licence p {
+	font-size: 18px;
+	text-indent: 1.5em;
 }
+
+#skils {
+	background: url(../images/Clients_Background.jpg) no-repeat center top;
+    position: relative;
+	line-height: 25px;
+	padding-bottom:40px; 
+	/*width: 100%;
+   	height: 100%;*/
+	font-weight: bolder;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; 
+
+	background-size: cover;
+}
+
+
+/* ------- FOOTER ---- */
 
 footer {
 	
@@ -481,6 +497,8 @@ footer {
 	margin-top:20px;
 	font-size: 13px;	
 }
+
+/* ------- FOOTER ---- */
 
 .list-inline { 
 	padding-left:0;
@@ -540,8 +558,6 @@ input[type="text"], input[type="email"] {
 .socialicon {
 	font-size:3em;
 	margin-right:10px;
-	/*border: solid 1px #fff;
-	background-color: #fcfcfc*/
 }
 
 
@@ -551,11 +567,7 @@ input[type="text"], input[type="email"] {
 }
 
 .colored-image {
-    /*background-image: linear-gradient(to right, #E3E3E3, #E3E3E3), url("..img/social-block-fb.png");*/
     background-blend-mode: overlay;
     background-size: contain;
-    background:#E3E3E3;
-    /*width: 43px;
-    height: 43px;*/  
-           
+    background:#E3E3E3;           
     }
